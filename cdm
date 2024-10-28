@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Cdm\Cli\Commands\GeneratePassword;
+use Cdm\Cli\Commands\GreetCommands;
+use Symfony\Component\Console\Application;
+
+
+$application = new Application();
+$application->add(new GreetCommands());
+$application->add(new GeneratePassword());
+
+$application->run();

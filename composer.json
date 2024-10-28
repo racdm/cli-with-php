@@ -1,0 +1,12 @@
+{
+    "name": "cdm/cli",
+    "description": "Creating A Custom Command Line Interface In PHP | Expert PHP Tips",
+    "autoload": {
+        "psr-4": {
+            "Cdm\\Cli\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "^7.1"
+    }
+}
